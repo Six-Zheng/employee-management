@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>重置密码</title>
+</head>
+<body>
+<div class="flexBox">
+  <div class="contentBox">
+    <p class="p1">亲爱的用户：</p>
+    <p class="p2">您好！感谢您使用员工信息管理系统，您的账号${username}正在进行密码重置，本次请求的验证码为：</p>
+    <p class="p3">${verificationCode}
+      <span class="p4">(为了保障您帐号的安全性，请在一分钟内完成验证。)</span>
+    </p>
+    <br>
+    <br>
+    <p>员工信息管理系统团队</p>
+    <p>${date}</p>
+  </div>
+</div>
+</body>
+<style>
+  html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .flexBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contentBox {
+    margin-top: 30px;
+    margin: 30px 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)
+  }
+
+  .p1 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .p2 {
+
+  }
+
+  .p3 {
+    color: #FF9900;
+    font-size: 18px;
+  }
+
+  .p4 {
+    color: #979797;
+    font-size: 15px;
+  }
+</style>
+</html>
